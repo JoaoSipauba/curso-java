@@ -6,10 +6,10 @@ public class Jantar {
 		var pesoInicial = p1.peso;
 		
 		var c1 = new Comida(1, "Macarrão");
-		p1.comer(c1.peso, c1.nome);
+		p1.comer(c1);
 		
 		var c2 = new Comida(0.5, "Salada");
-		p1.comer(c2.peso, c2.nome);
+		p1.comer(c2);
 		
 		System.out.println();
 		System.out.printf("%s pesava %s Kg. Seu novo peso é de %s Kg.",p1.nome, pesoInicial ,p1.peso);

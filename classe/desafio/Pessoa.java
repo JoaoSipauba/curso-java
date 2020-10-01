@@ -9,8 +9,10 @@ public class Pessoa {
 		this.nome = nome;
 	}
 	
-	void comer(double peso, String nome){
-		this.peso += peso;
-		System.out.println("Comeu "+ nome);
+	void comer(Comida comida){
+		if(comida != null) {			
+			this.peso += comida.peso;
+			System.out.println("Comeu "+ comida.nome);
+		}
 	}
 }
