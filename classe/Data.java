@@ -1,20 +1,20 @@
 package classe;
 
 public class Data {
-	static String dia;
+	String dia;
 	String mes;
 	String ano;
 	
 	Data(){
-		dia = "1";
-		mes = "1";
-		ano = "1";
+		this.dia = "1";
+		this.mes = "1";
+		this.ano = "1750";
 	}
 	
-	Data(String diaInformado,String mesInformado,String anoInformado){
-		dia = diaInformado;
-		mes = mesInformado;
-		ano = anoInformado;
+	Data(String dia,String mes,String ano){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	String obterDataFormatada() {
 		return String.format("%s/%s/%s", dia,mes,ano);
